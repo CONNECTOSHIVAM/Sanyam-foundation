@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>templets By shivam</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div class="bod">
+
+
+    <div class="header">
+        <div class="brand-name">
+            <h1>sanyam</h1>
+        </div>
+        <div class="menu-bar">
+            <ul>
+                <a href="index.html">Home</a>
+                <a href="#">Explore</a>
+                <a href="About.html">About</a>        
+                <a href="#">Contact</a>
+            </ul>
+        </div>
+        <div class="bton">
+             <button class="btn-one">sign</button>
+             <button class="btn-two">login</button>
+        </div>
+    </div>
+
+    <div class="content">
+        <p>Welcome</p>
+        <h1>Explore the sanyam And make <br> easy your work.</h1>
+        <button class="btn-con">Explore now</button>
+    </div>
+
+     <div class="box">
+        <div class="card">
+            <img src="./Images/product-1.jpeg" alt="">
+            <p class="p">faxy prfium with rose</p>
+            <button class="bn">buy now</button>
+            <button class="bn-s">Add to cart</button>
+        </div>
+        <div class="card">
+            <img src="./Images/product-3.jpeg" alt="">
+            <p class="p">faxy prfium with rose</p>
+            <button class="bn">buy now</button>
+            <button class="bn-s">Add to cart</button>
+        </div>
+        <div class="card">
+            <img src="./Images/product-4.jpg" alt="">
+            <p class="p">faxy prfium with rose</p>
+            <button class="bn">buy now</button>
+            <button class="bn-s">Add to cart</button>
+        </div>
+        <div class="card">
+            <img src="./Images/product-7.jpg" alt="">
+            <p class="p">faxy prfium with rose</p>
+            <button class="bn">buy now</button>
+            <button class="bn-s">Add to cart</button>
+        </div>
+     </div>
+
+
+     <div class="container">
+        <div class="about-section">
+          <h2>About Us</h2>
+          <p>Welcome to our online store! We are dedicated to providing you with the best shopping experience, offering a wide range of products with top-notch quality and unbeatable prices.</p>
+          <p>Our mission is to make your online shopping experience seamless and enjoyable. Whether you're looking for the latest fashion trends, electronics, home essentials, or gifts for your loved ones, we've got you covered.</p>
+          <p>With years of experience in the e-commerce industry, we strive to exceed your expectations by delivering exceptional customer service and timely delivery of your orders.</p>
+          <p>Thank you for choosing us for your shopping needs. Happy shopping!</p>
+        </div>
+      
+        <div class="contact-form">
+          <h2>Contact Us</h2>
+          <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+            <button class="click" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+      
+      <script>
+        // JavaScript for handling form submission
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent the default form submission
+          
+          // Get form values
+          var name = document.getElementById('name').value;
+          var email = document.getElementById('email').value;
+          var message = document.getElementById('message').value;
+      
+          // Example: Send form data using AJAX (you may need a server-side script to handle this)
+          // For demo purposes, we're simply logging the form data to the console
+          console.log("Name: " + name);
+          console.log("Email: " + email);
+          console.log("Message: " + message);
+      
+          // You can add AJAX code here to send the form data to your server
+        });
+      </script>
+      
+      </body>
+      </html>
+</div>
+</body>
+</html>

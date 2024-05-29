@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About-section</title>
+    <link rel="stylesheet" href="About.html">
+    <style>
+       body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+
+  .container {
+   
+    max-width: 1250px;
+    margin: 2rem auto;
+    margin-bottom: 5rem;
+    padding: 30px;
+    background-color: #76885B;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .about-section {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 40px;
+  }
+
+  .about-section h2 {
+    color: black;
+    margin-bottom: 20px;
+  }
+
+  .about-section p {
+    line-height: 1.6;
+    color: black;
+  }
+
+  .contact-form {
+    margin-top: 30px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .contact-form button {
+    color: white;
+    background-color: rgb(27, 26, 26);
+    border: 2px solid #12222222;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .contact-form button:hover{
+    background-color: white;
+    color: black;
+    transition: 1s;
+    transform: scale(1.1);
+  } 
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="about-section">
+          <h2>About Us</h2>
+          <p>Welcome to our online store! We are dedicated to providing you with the best shopping experience, offering a wide range of products with top-notch quality and unbeatable prices.</p>
+          <p>Our mission is to make your online shopping experience seamless and enjoyable. Whether you're looking for the latest fashion trends, electronics, home essentials, or gifts for your loved ones, we've got you covered.</p>
+          <p>With years of experience in the e-commerce industry, we strive to exceed your expectations by delivering exceptional customer service and timely delivery of your orders.</p>
+          <p>Thank you for choosing us for your shopping needs. Happy shopping!</p>
+        </div>
+      
+        <div class="contact-form">
+          <h2>Contact Us</h2>
+          <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+            <button class="click" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+      
+      <script>
+        // JavaScript for handling form submission
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent the default form submission
+          
+          // Get form values
+          var name = document.getElementById('name').value;
+          var email = document.getElementById('email').value;
+          var message = document.getElementById('message').value;
+      
+          // Example: Send form data using AJAX (you may need a server-side script to handle this)
+          // For demo purposes, we're simply logging the form data to the console
+          console.log("Name: " + name);
+          console.log("Email: " + email);
+          console.log("Message: " + message);
+      
+          // You can add AJAX code here to send the form data to your server
+        });
+      </script>
+      
+</body>
+</html>
